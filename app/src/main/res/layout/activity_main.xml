@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.get2abdul101.learnhausa.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="#4A312A">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="16dp">
+
+                <TextView
+                    android:id="@+id/numbers"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_numbers"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:text="@string/category_numbers" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4A312A">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="16dp">
+
+                <TextView
+                    android:id="@+id/family"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_family"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:text="@string/category_family" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:background="#4A312A">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="16dp">
+
+                <TextView
+                    android:id="@+id/colors"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_colors"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:text="@string/category_colors" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4A312A">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="16dp">
+
+                <TextView
+                    android:id="@+id/phrases"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_phrases"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:text="@string/category_phrases" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_marginTop="50dp"
+        android:paddingTop="8dp"
+        android:text="Exit" />
+
+</LinearLayout>
